@@ -1,0 +1,9 @@
+@CHARSET "ISO-8859-1";
+
+.img-uniform {
+	max-height:220px;
+}
+
+.row-space {
+	margin-bottom: 15px;
+}
