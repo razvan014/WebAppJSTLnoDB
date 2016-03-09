@@ -3,6 +3,9 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.Produs;
+import model.Service;
+
 public class Service {
 
 	private static List<Produs> electronice;
@@ -31,7 +34,15 @@ public class Service {
 		return electronice;
 	}
 
-	
+	public static void setProduse(List<Produs> produse) {
+		Service.electronice = produse;
+	}
+
+	public static Produs getProdusDupaId(int id) {
+		
+		return electronice.get(id-1);
+	}
+
 	
 	
 }

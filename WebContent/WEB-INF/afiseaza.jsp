@@ -62,7 +62,15 @@ Ceea ce inseamna ce browserele nu stiu jstl-->
       			</div>
 				<div class="media-body">
       				<h4 class="media-heading">${produs.denumire}</h4>
-      				<p>${produs.descriere}</p>
+      				
+      				<!-- buton care trimite la o pagina cu detaliile produsul
+      				 Trebuie sa-i spunem servletului ce produs vrem
+      				 Ii transmitem id-ul produsului sub forma de input hidden-->
+      				 
+      				<form action="produs" method="get">
+      					<input type="hidden" value="${produs.id}" name="id">
+      					<input type="submit" value="afiseaza detalii" class="btn btn-info">
+      				</form>
       			</div>
 			</li>	
 		</c:forEach>

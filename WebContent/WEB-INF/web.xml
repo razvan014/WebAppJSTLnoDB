@@ -14,4 +14,24 @@
     <servlet-name>ServletHome</servlet-name>
     <url-pattern>/home</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProdusServlet</display-name>
+    <servlet-name>ProdusServlet</servlet-name>
+    <servlet-class>controller.ProdusServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProdusServlet</servlet-name>
+    <url-pattern>/produs</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletModificaProdus</display-name>
+    <servlet-name>ServletModificaProdus</servlet-name>
+    <servlet-class>controller.ServletModificaProdus</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletModificaProdus</servlet-name>
+    <url-pattern>/modifica-produs</url-pattern>
+  </servlet-mapping>
 </web-app>
